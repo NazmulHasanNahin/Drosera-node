@@ -1,0 +1,64 @@
+2025-04-20T07:59:57.332147Z  INFO libp2p_swarm: local_peer_id=12D3KooWM2rGwR2ia5tgToh4FvK7i34J68RZgkcdNvwKQS7TyVgn
+2025-04-20T07:59:57.614677Z  INFO drosera_services::operator::trap_watcher: Number of opted in traps: 0
+2025-04-20T07:59:57.614765Z  INFO drosera_services::operator::submission::service: Starting Trap Submission Service
+2025-04-20T07:59:57.621700Z  INFO drosera_services::network::p2p: Listening on /ip4/127.0.0.1/tcp/31313
+2025-04-20T07:59:57.621717Z  INFO drosera_services::network::p2p: Listening on /ip4/10.0.5.2/tcp/31313
+2025-04-20T07:59:57.621759Z  INFO drosera_services::network::p2p: Listening on /ip4/172.17.0.1/tcp/31313
+2025-04-20T07:59:57.621976Z  INFO drosera_services::operator::attestation::service: Trap Attestation Service started
+2025-04-20T07:59:57.621983Z  INFO drosera_operator::node: Operator Node successfully spawned!
+2025-04-20T07:59:57.621996Z  INFO drosera_services::operator::dnr_registration: DNR Registration Service started
+2025-04-20T07:59:57.622005Z  INFO drosera_services::operator::dispute::service: Running DisputerService
+2025-04-20T07:59:57.622013Z  INFO drosera_services::operator::enzyme::service: Trap Enzyme Service started block_number=3703329
+2025-04-20T07:59:57.895815Z  INFO drosera_services::operator::block_watcher: Missing or reorged block detected at block number 3703328. Fetching block data.
+2025-04-20T07:59:58.104439Z  INFO drosera_services::operator::block_watcher: Missing or reorged block detected at block number 3703327. Fetching block data.
+2025-04-20T07:59:58.202003Z  INFO drosera_services::operator::block_watcher: Missing or reorged block detected at block number 3703326. Fetching block data.
+2025-04-20T07:59:58.422655Z  INFO drosera_services::operator::block_watcher: Missing or reorged block detected at block number 3703325. Fetching block data.
+2025-04-20T07:59:58.517952Z  INFO drosera_services::operator::block_watcher: Missing or reorged block detected at block number 3703324. Fetching block data.
+2025-04-20T07:59:58.601437Z  INFO drosera_services::operator::block_watcher: Missing or reorged block detected at block number 3703323. Fetching block data.
+2025-04-20T07:59:58.697652Z  INFO drosera_services::operator::block_watcher: Missing or reorged block detected at block number 3703322. Fetching block data.
+2025-04-20T07:59:58.789589Z  INFO drosera_services::operator::block_watcher: Missing or reorged block detected at block number 3703321. Fetching block data.
+2025-04-20T07:59:59.041043Z  INFO drosera_services::operator::block_watcher: Missing or reorged block detected at block number 3703320. Fetching block data.
+2025-04-20T07:59:59.143800Z  INFO drosera_services::operator::block_watcher: Missing or reorged block detected at block number 3703319. Fetching block data.
+2025-04-20T08:00:22.635956Z ERROR drosera_services::metrics: Failed to get Operator's ETH balance: Transport(HttpError(HttpError { status: 429, body: "error code: 1015" }))
+2025-04-20T08:00:23.752968Z ERROR drosera_services::operator::submission::gas_fee_service: Failed to update fees: HTTP error 429 with body: error code: 1015
+
+Caused by:
+    HTTP error 429 with body: error code: 1015
+2025-04-20T08:00:27.659100Z ERROR drosera_services::metrics: Failed to get Operator's ETH balance: Transport(HttpError(HttpError { status: 429, body: "error code: 1015" }))
+2025-04-20T08:00:32.674601Z ERROR drosera_services::metrics: Failed to get Operator's ETH balance: Transport(HttpError(HttpError { status: 429, body: "error code: 1015" }))
+2025-04-20T08:00:32.829367Z ERROR drosera_services::operator::block_watcher: Failed to get latest block number. Error: Transport(HttpError(HttpError { status: 429, body: "error code: 1015" }))
+2025-04-20T08:00:32.829386Z  WARN drosera_operator::node: Block watcher stopped with strategy: Restart
+2025-04-20T08:00:32.829410Z  INFO drosera_services::shutdown: Received shutdown signal, returning ExitStrategy::Restart
+2025-04-20T08:00:32.829412Z  INFO drosera_operator::node: Shutdown signal received, Trap enzyme service stopped
+2025-04-20T08:00:32.829424Z  INFO drosera_services::shutdown: Received shutdown signal, returning ExitStrategy::Restart
+2025-04-20T08:00:32.829424Z  INFO drosera_operator::node: Shutdown signal received, Dispute service stopped
+2025-04-20T08:00:32.829422Z  INFO drosera_services::shutdown: Received shutdown signal, returning ExitStrategy::Restart
+2025-04-20T08:00:32.829427Z  INFO drosera_operator::node: Shutdown signal received, DNR Registration service stopped
+2025-04-20T08:00:32.829430Z  INFO drosera_services::shutdown: Received shutdown signal, returning ExitStrategy::Restart
+2025-04-20T08:00:32.829427Z  INFO drosera_operator::node::node_driver: Restarting Drosera Operator node
+2025-04-20T08:00:32.829430Z  INFO drosera_operator::node: Shutdown signal received, RPC server stopped
+2025-04-20T08:00:32.829431Z  INFO drosera_operator::node::node_driver: Waiting 5 seconds before retrying RPC again...
+2025-04-20T08:00:32.829442Z  INFO drosera_services::shutdown: Received shutdown signal, returning ExitStrategy::Restart
+2025-04-20T08:00:32.829443Z  WARN drosera_operator::node: Shutting down network service
+2025-04-20T08:00:32.829445Z  INFO drosera_services::shutdown: Received shutdown signal, returning ExitStrategy::Restart
+2025-04-20T08:00:32.829451Z  WARN drosera_services::operator::attestation::service: Shutting down Trap Attestation Service
+2025-04-20T08:00:32.829454Z  WARN drosera_operator::node: Trap attestation service stopped
+2025-04-20T08:00:32.829459Z  INFO drosera_services::shutdown: Received shutdown signal, returning ExitStrategy::Restart
+2025-04-20T08:00:32.829462Z  INFO drosera_operator::node: Shutdown signal received, System metrics stopped
+2025-04-20T08:00:32.829484Z  WARN drosera_operator::node: Trap watcher stopped
+2025-04-20T08:00:32.829526Z  WARN drosera_services::network::relayer: AttestationRelayer task exited
+2025-04-20T08:00:32.830101Z  WARN drosera_services::operator::submission::service: Trap Submission Service channels have been closed
+2025-04-20T08:00:32.830111Z  WARN drosera_services::operator::submission::service: Trap Submission Service has exited, shutting down runners
+2025-04-20T08:00:32.830121Z  WARN drosera_services::operator::submission::gas_fee_service: Shutting down Priority Fee Service
+2025-04-20T08:00:37.875944Z ERROR drosera_operator::node::node_driver: ETH RPC https://ethereum-holesky-rpc.publicnode.com is still down/unreachable. Switching to next RPC (https://1rpc.io/holesky) and testing connectivity
+2025-04-20T08:00:37.875960Z  INFO drosera_operator::node::node_driver: Connection attempts: 1/69
+2025-04-20T08:00:38.038594Z  INFO drosera_operator::node::node_driver: ETH RPC https://1rpc.io/holesky is working. Restarting Drosera Operator node...
+2025-04-20T08:00:38.038612Z  INFO drosera_operator::node::node_driver: Found working RPC. Restart the node
+2025-04-20T08:00:38.958708Z  INFO libp2p_swarm: local_peer_id=12D3KooWM2rGwR2ia5tgToh4FvK7i34J68RZgkcdNvwKQS7TyVgn
+thread 'main' panicked at /home/runner/actions-runner/_work/drosera/drosera/crates/operator/src/node/mod.rs:138:10:
+Failed to initialize trap config datastore: Failed to fetch operator traps
+
+Caused by:
+    server returned an error response: error code -32000: json: cannot unmarshal string into Go struct field Response.error of type xjsonrpc.ResponseError
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+2025-04-20T08:00:39.165817Z  WARN drosera_services::network::relayer: AttestationRelayer task exited
