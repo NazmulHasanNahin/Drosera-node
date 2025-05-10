@@ -1,0 +1,9 @@
+ports:
+  - port: 31313
+    onOpen: open-preview
+  - port: 31314
+    onOpen: open-preview
+  - port: 31315
+    onOpen: open-preview
+  - port: 31316
+    onOpen: open-preview
